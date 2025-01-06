@@ -8,7 +8,7 @@ LiquidCrystal_I2C lcd(endereco, colunas, linhas);
 #define p_trigger 2
 #define p_echo 3
 double distancia;
-double const = gravidade = 9.81;
+double const gravidade = 9.81;
 double const c_elastica = 133.96;
 double const c_elastica2 = 166.19;
 
