@@ -64,3 +64,87 @@ O sinal de menos resulta do sentido da Força elástica, uma vez que ela é rest
 </div>
 
 <br>
+
+# Componentes Eletroeletrônicos
+## Arduino
+O Arduino surgiu em 2005 pelo italiano e Designer de Interação Massimo Banzi, com o intuito de ser uma plataforma de prototipagem eletrônica na linguagem de C + +. Conforme Kushner (2011), essa plataforma tem como peculiaridade ser de baixo custo, open source e livre de royalties permitindo a utilização de componentes auxiliares com muita facilidade, visto que a arrumação da pinagem da placa e a integração de elementos como os jumpers e uma protoboard é extremamente intuitivo e de fácil integração.
+
+Com a necessidade de diferentes tamanhos, capacidade de processamento e portas de acesso à placa via software, irrompeu-se a necessidade de uma variedade de tipos de placas para o Arduino, sendo os modelos mais comuns Mega, Uno e Nano, como ilustrado na (Figura 5). Com esse avanço, o Arduino garantiu uma gama de aplicações ao se tratar do monitoramento remoto, da automação e da Internet das Coisas, assim atribuindo o limite apenas à criatividade do usuário/criador.
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f8fc82f6-15bc-4de2-ba8b-4f57fbe850eb" alt="Tipos de Arduino">
+</div>
+
+<br>
+
+Sobre a relação entre os componentes internos da placa e ao ambiente físico, é proporcionado por sensores conectados diretamente nos pinos ou por uma ligação via jumper que converte a energia de algum estímulo ambiental em sinais elétricos e lógicos à placa, podendo ser desligados a qualquer momento ao integrar botões de acionamento ou interruptores encaixados em uma placa de ensaio. 
+
+O processo de estímulo-resposta é intermediado por um microcontrolador da placa do Arduino (Figura 6), os quais são responsáveis por armazenar o código estruturado e gerenciar a sua aplicação para outras peças anexadas ao sistema (BABOS, 2022). Os mais utilizados são os produzidos pela empresa ATmel, com o produto se chamando ATmega.
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/402d9147-94f1-471b-b787-e87210d80f8f" alt="microcontrolador ATmega">
+</div>
+
+<br>
+
+## Sensor de distância
+
+Sensores de distância do qual a plataforma do Arduino utiliza comumente faz uso da tecnologia presente em sonar de localização ultrassônica, que se baseia em emitir uma onda e calcular o tempo de resposta da própria (MACEDO, 2013, p.2). 
+
+No caso do sensor (Figura 7), existe um pino trigger o qual emite ondas de alta frequência com o seu feixe em formato de cone, da mesma maneira o sensor é imbuído de outro pino denominado de eco do qual recebe essas ondas novamente. 
+
+Além dessa propriedade de enviar e receber, o componente eletrônico deve converter a informação da distância em pulsos elétricos para o microcontrolador, que por sua vez converte a mesma informação para os demais itens do sistema.
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d724fdc5-c497-40c5-b261-cc0c7cdb67f5" alt="Sensor HCSR04">
+</div>
+
+<br>
+
+Para a elaboração do projeto, será utilizado o sensor HC-SR04, que irá encontrar a distância por meio da fórmula da Velocidade Média:
+```
+Vm = ∆S/∆t
+```
+Porém, a fórmula geral será modificada para ser compatível com o fenômeno físico do eco exercido pelo sensor. Será medida a distância da onda que percorrerá, com uma velocidade média fixa, o trajeto de ida e a reflexão do objeto (volta), portanto, a fórmula sofrerá o reajuste ao ter a distância multiplicada por 2:
+
+```
+Vm = (2 x d)/∆t
+```
+
+# Tela de Cristal Líquido
+
+A Tela de Cristal Líquido (do inglês, Liquid-Crystal Display), é a peça integrante da balança que atua como um periférico de saída de informação, conforme representado na Figura 8. 
+
+Nessa lógica, ela é responsável por apresentar de forma visual mensagens alfanuméricas predefinidas, como a impressão da massa do objeto, no caso da balança digital. Em relação a isso, a mensagem é evidenciada pela luz de fundo (Backlight), sendo que essa pode variar do verde até o azul. 
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6cc39166-6c42-4425-8e61-a9a3f5f28004" alt="Display LCD">
+</div>
+
+<br>
+
+O número de informações apresentadas ao usuário varia de acordo com as dimensões da tela, a exemplo um display de 16 linhas por duas colunas consegue exibir, no máximo, 32 caracteres concomitantemente (BABOS, 2020, p.122).
+
+Para mais, o LCD realiza a comunicação com a placa do Arduino por intermédio do módulo I2C (Inter-Integrated Circuit), segundo a Figura 9. Em vista disso, tal componente permite a integração entre um equipamento periférico - no caso o LCD - e o microcontrolador da placa do Arduino. Em consonância com isso, o módulo possui uma arrumação de 4 pinos, sendo que dois deles são o VCC (Coletor Comum de Voltagem, em tradução livre) que se liga ao pino de tensão de 5V da placa Arduino e o GND (terra) que se conecta ao GND da placa Arduino e estabelece a diferença de potencial e o sentido da corrente elétrica. 
+
+Em sequência, em conformidade com o site arduino.cc (2021) - principal divulgador da plataforma Arduino e da IDE correspondente - os outros 2 pinos são o SCL (Serial Clock Pin) que tem como função essencial a geração de sincronização do sistema por parte do microcontrolador e o SDA (Serial Data Pin), o qual é o executor, de fato, do envio e do recebimento de dados.
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/44054137-2f3a-4c7b-8f8b-cc3628ae9e38" alt="Módulo I2C">
+</div>
+
+<br>
+
+De forma adicional, cabe tornar claro que a correta utilização do LCD e por consequência do Módulo I2C não prescinde do emprego de uma biblioteca, sendo uma das mais populares a <LiquidCrystal_I2C.h>. Por último, tais bibliotecas tornam possível a promoção das funções de C + + relacionadas às ações desejadas.
+
+
