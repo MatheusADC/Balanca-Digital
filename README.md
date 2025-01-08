@@ -145,6 +145,33 @@ Em sequência, em conformidade com o site arduino.cc (2021) - principal divulgad
 
 <br>
 
+# Simulação Virtual - TinkerCad 3D
 De forma adicional, cabe tornar claro que a correta utilização do LCD e por consequência do Módulo I2C não prescinde do emprego de uma biblioteca, sendo uma das mais populares a <LiquidCrystal_I2C.h>. Por último, tais bibliotecas tornam possível a promoção das funções de C + + relacionadas às ações desejadas.
 
+O projeto a ser executado de forma holística tem como égide metodológica a abordagem descritiva-explicativa do processo por meio da indicação dos itens eletroeletrônicos e mecânico (com ênfase particular na mola) a serem manipulados em consonância com a linguagem da programação apropriada para a utilização do Arduino.
+
+Para tal propósito, primeiramente será confeccionado uma prototipação da balança digital no Web Software de modelagem Tinkercad, sendo essa ferramenta responsável por exemplificar e tornar mais visível a aplicação digital da placa Arduino com os demais componentes, com a finalidade de evidenciar as ligações e relações entre os elementos integrantes do sistema, conforme as ilustrações a seguir.
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/edd9a7d1-1b7c-4716-89c6-b849b4c5c7a9" alt="Vistas - TinkerCad3D">
+</div>
+
+<br>
+
+Inicialmente, será empregado como invólucro uma caixa de madeira MDF de base quadrada, 30x30x20cm, com 4 molas helicoidais de compressão parafusadas e correlacionadas em uma associação em paralelo. Conjuntamente, uma tampa de alumínio de dimensões 25x25 cm atuará como suporte ao objeto que terá a sua força aplicada medida. 
+De forma complementar, foi determinado o sensor de distância anexado que, de acordo com os dados do próprio fabricante, tem precisão que varia de 2 cm a 400 cm. Em sucessão, a placa Arduino escolhida para o projeto foi o modelo UNO R3 estritamente pelas proporções constituídas.
+
+Para terminar, pretende-se conseguir medir objetos com intervalo de peso de 250g até 2,250 Kg de forma assertiva.
+Para fins de simplificação da modelagem 3D e para evitar a poluição visual da representação foram omitidos os jumpers do projeto.
+Toda a sequência de desenvolvimento será distribuída nas seguintes fases:
+
+a) formular a criação do algoritmo/código base manipulado no processo;
+
+b) averiguar a melhor forma de dispor as peças auxiliares no que se refere à sua interação tanto com a placa Arduino quanto com os diálogos inter componentes;
+
+c) estabelecer e delimitar os parâmetros de funcionamento do aparato;
+
+d) analisar o desempenho do mecanismo, de tal forma a realizar a retificação de possíveis falhas de montagem ou de ordenamento da codificação.
 
