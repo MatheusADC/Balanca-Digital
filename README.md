@@ -254,3 +254,30 @@ Posto essa rápida explanação, seguem as imagens do circuito no Tinkercad (Fig
 </div>
 
 <br>
+
+# Prototipação
+Primeiramente, vale destacar que as entradas VCC de ambos os componentes conectados à placa arduino foram ligados às portas de voltagem de saída positiva, sendo que o sensor HC-SR04 foi atrelado à porta de 3.3V e o LCD foi atado a porta de 5V para funcionar de forma adequada devido à necessidade de uma maior voltagem. Ademais, ambos os polos negativos foram inseridos ao GND da placa.
+
+A partir disso, o trigger do sensor foi conectado ao pino digital 2 e o eco ao pino digital 3. Já no que se refere ao LCD, sabendo-se que o modelo da placa arduino é o UNO R3, a porta Serial Data (SDA) que é responsável pela transmissão de dados deve ser ligada ao pino analógico A4 e a porta Serial Clock (SCL) que tem por função sincronizar toda a informação pelo módulo I2C, deve ser ligada ao pino A5.
+
+A seguir seguem algumas fotos do protótipo concebido por último:
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/53613edc-d242-4230-a7a1-533267620d0e">
+</div>
+
+<br>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/91ad74cb-9107-45b3-ae7d-88edfbe97c62">
+</div>
+
+<br>
+
+> [!CAUTION]
+> O maior obstáculo para a finalização do projeto foi calibrar a balança, uma vez que devido à diferença do tamanho das molas e
+> à estrutura da balança, foi essencial realizar testes variados para consertar manualmente (no código) as imprecisões
