@@ -175,3 +175,58 @@ c) estabelecer e delimitar os parâmetros de funcionamento do aparato;
 
 d) analisar o desempenho do mecanismo, de tal forma a realizar a retificação de possíveis falhas de montagem ou de ordenamento da codificação.
 
+# Medidas e Testes
+Com a mola comprada, se viu a necessidade de calcular suas medidas, principalmente sua elongação e a sua constante elástica presentes, com o intuito de tal componente ser compatível com o suporte.
+
+Para isso, foi elaborado um mecanismo que com o auxílio de uma régua centimetrada facilitou a medida da constante elástica com massas inferiores à 1 Kg, conforme imagem (Figura 10) a seguir:
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/bb07c10f-e332-4c47-b77d-d3d53fe0f7b9">
+</div>
+
+<br>
+
+Nesse sentido, para possuir precisão, as medições ocorreram em laboratório com 4 pesos diferentes e os cálculos no programa chamado Labfit foram realizados. Ademais, de forma adicional, foi realizado o cálculo manual através da Lei de Hooke.
+
+A partir disso, segue a tabela com os pesos utilizados e com as deformações apuradas, adotando a gravidade (g) igual à  9,81 m/s<sup>2</sup> , o peso estipulado em newton (N) e a deformação em metro (m), em x<sub>0</sub> e P<sub>0</sub> são o tamanho (mola sem força elástica aplicada) e o peso da mola, respectivamente:
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3c0a2ba8-b9ca-4984-8e86-f983c7b80f3e">
+</div>
+
+<br>
+
+Munido desses dados, foi possível estimar a constante elástica (Figura 11) através do software:
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/96190a92-5888-4e35-94ba-36743fe88fa9">
+</div>
+
+<br>
+
+Assim, sabendo que SIGMAA corresponde à incerteza associada à K<sub>el</sub> e adotando,por convenção, duas casas decimais após a vírgula, o valor corretamente escrito da constante elástica é:
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0c36380c-12d6-4439-a680-7e36c86553e5">
+</div>
+
+<br>
+
+Ainda utilizando o LAB fit, segue o gráfico (Figura 12) Peso x Deformação:
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/72d623e5-3e3b-4b60-b5f0-a38c85d56a7a">
+</div>
+
+<br>
+
