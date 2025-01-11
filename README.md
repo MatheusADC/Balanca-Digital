@@ -230,3 +230,27 @@ Ainda utilizando o LAB fit, segue o gráfico (Figura 12) Peso x Deformação:
 
 <br>
 
+# Organização Eletroeletrônica
+Como resolução final, o suporte da balança bem como o prato para aferição foram confeccionados de acrílico. O sensor ultrassônico foi disposto na porção central da balança para a melhor obtenção dos dados da distância.
+
+Para mais, optou-se pela utilização do LCD com módulo I2C integrado, com o fito de poupar não somente espaço no interior da balança mas também evitar o enroscamento excessivo dos jumpers.
+
+Tanto o sensor ultrassônico como também o LCD foram conectados diretamente à placa Arduino Uno R3. Tal escolha foi feita também com o intuito de liberação de espaço interno que seria ocupado pela protoboard.
+
+Posto essa rápida explanação, seguem as imagens do circuito no Tinkercad (Figura 13) e o esquema elétrico do Projeto em questão (Figura 14).
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9b718684-2838-43c7-b0dc-379e5a1802cb">
+</div>
+
+<br>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7f1f2b2d-f184-431f-a099-dc5f62b95d5b">
+</div>
+
+<br>
