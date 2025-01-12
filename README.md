@@ -280,4 +280,4 @@ A seguir seguem algumas fotos do protótipo concebido por último:
 
 > [!CAUTION]
 > O maior obstáculo para a finalização do projeto foi calibrar a balança, uma vez que devido à diferença do tamanho das molas e
-> à estrutura da balança, foi essencial realizar testes variados para consertar manualmente (no código) as imprecisões
+> à estrutura da balança, foi essencial realizar testes variados para consertar manualmente (no código) as imprecisões.
