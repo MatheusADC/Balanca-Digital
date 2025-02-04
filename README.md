@@ -117,7 +117,7 @@ Porém, a fórmula geral será modificada para ser compatível com o fenômeno f
 Vm = (2 x d)/∆t
 ```
 
-# Tela de Cristal Líquido
+## Tela de Cristal Líquido
 
 A Tela de Cristal Líquido (do inglês, Liquid-Crystal Display), é a peça integrante da balança que atua como um periférico de saída de informação, conforme representado na Figura 8. 
 
