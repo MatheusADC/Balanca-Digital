@@ -1,7 +1,7 @@
-# Descrição
+# <img src="https://github.com/user-attachments/assets/caabfdf0-0f9e-44a3-8200-c6579fe87887" alt="ícone de descrição" width="28"> Descrição
 O dispositivo visa a medição da massa de objetos através do uso de um sensor de distância, de molas e do microcontrolador de prototipação Arduino.
 
-# Contexto Histórico
+# <img src="https://github.com/user-attachments/assets/87ea5137-7e44-40e7-88af-c4e502bc879b" alt="ícone de história" width="30"> Contexto Histórico
 A balança está presente em quase todos os povos da humanidade, sendo que o seu primeiro registro histórico foi há sete mil anos no Egito Antigo (Figura 1), no formato de dois pratos fixados a uma haste horizontal equilibrada por um ponto de apoio fixo, essa balança desempenhava um papel importante no comércio e até na religião desse povo (Figura 2).
 
 <br>
@@ -14,14 +14,14 @@ A balança está presente em quase todos os povos da humanidade, sendo que o seu
 
 Não somente povos antigos, mas até na atualidade a balança de pratos representa um equilíbrio para diversas civilizações, mostrado por exemplo no símbolo da justiça.
 
-# Molas
-## Categorias de Molas
+# <img src="https://github.com/user-attachments/assets/9793b666-66af-4c73-948a-5f72fa6994ea" alt="ícone de mola" width="28">Molas
+## 1. Categorias de Molas
 
 Consoante Robert L. Norton (2013, p.788) os tipos de molas, quando decompostas em relação à sua geometria material, totalizam 18 subdivisões, sendo algumas dessas representadas dentro de um mesmo grupo devido à sua semelhança estrutural. 
 
 Nesse sentido, vale analisar de forma pormenorizada cada grupo de molas com o fito de evidenciar à que melhor se adequa ao projeto em questão, tanto de forma posicional - tamanho do componente no tocante à balança - quanto na medição da deflexão, sendo esse conceito entendido como o desvio da mola da sua posição original quando em contato com uma força.
 
-## Molas Helicoidais de Compressão
+## 2. Molas Helicoidais de Compressão
 
 As molas helicoidais de compressão (Figura 3) são a variedade mais utilizada no mundo pois oferecem uma gama de arranjos. Posto isso, são molas que possuem um alto grau de deflexão, podendo, dessarte, serem utilizadas como válvulas em motores veiculares. A partir disso, são encontradas nas seguintes arrumações:
 
@@ -41,7 +41,7 @@ Ampulheta: assim como as molas do tipo barril, é formada por molas cônicas jus
 
 <br>
 
-# Lei de Hooke 
+# <img src="https://github.com/user-attachments/assets/e6937426-1455-44da-9925-ed7e4ebd85db" alt="ícone de fórmula matemática" width="32"> Lei de Hooke 
 
 O conjunto da mola atrelada à massa do objeto a ser “pesado” forma um Sistema Massa - Mola em que em algum momento a variação da distensão da mola (oscilação) cessa para ocorrer a medição, o qual utiliza a Lei de Hooke para associar de maneira linear, vide gráfico da Figura 4, a força empregada à deformação da mola. O comportamento linear da mola é condizente com a variação diretamente proporcional entre a força e a deformação. Tal princípio recebe o nome do cientista inglês Robert Hooke e pode ser definido pela fórmula a seguir:
 
@@ -65,8 +65,8 @@ O sinal de menos resulta do sentido da Força elástica, uma vez que ela é rest
 
 <br>
 
-# Componentes Eletroeletrônicos
-## Arduino
+# <img src="https://github.com/user-attachments/assets/08a14579-8958-4b9b-bdfc-214ed24d3eb5" alt="ícone de componente eletrônico" width="30"> Componentes Eletroeletrônicos
+## 1. Arduino
 O Arduino surgiu em 2005 pelo italiano e Designer de Interação Massimo Banzi, com o intuito de ser uma plataforma de prototipagem eletrônica na linguagem de C + +. Conforme Kushner (2011), essa plataforma tem como peculiaridade ser de baixo custo, open source e livre de royalties permitindo a utilização de componentes auxiliares com muita facilidade, visto que a arrumação da pinagem da placa e a integração de elementos como os jumpers e uma protoboard é extremamente intuitivo e de fácil integração.
 
 Com a necessidade de diferentes tamanhos, capacidade de processamento e portas de acesso à placa via software, irrompeu-se a necessidade de uma variedade de tipos de placas para o Arduino, sendo os modelos mais comuns Mega, Uno e Nano, como ilustrado na (Figura 5). Com esse avanço, o Arduino garantiu uma gama de aplicações ao se tratar do monitoramento remoto, da automação e da Internet das Coisas, assim atribuindo o limite apenas à criatividade do usuário/criador.
@@ -91,7 +91,7 @@ O processo de estímulo-resposta é intermediado por um microcontrolador da plac
 
 <br>
 
-## Sensor de distância
+## 2. Sensor de distância
 
 Sensores de distância do qual a plataforma do Arduino utiliza comumente faz uso da tecnologia presente em sonar de localização ultrassônica, que se baseia em emitir uma onda e calcular o tempo de resposta da própria (MACEDO, 2013, p.2). 
 
@@ -117,7 +117,7 @@ Porém, a fórmula geral será modificada para ser compatível com o fenômeno f
 Vm = (2 x d)/∆t
 ```
 
-## Tela de Cristal Líquido
+## 3. Tela de Cristal Líquido
 
 A Tela de Cristal Líquido (do inglês, Liquid-Crystal Display), é a peça integrante da balança que atua como um periférico de saída de informação, conforme representado na Figura 8. 
 
@@ -145,7 +145,7 @@ Em sequência, em conformidade com o site arduino.cc (2021) - principal divulgad
 
 <br>
 
-# Simulação Virtual - TinkerCad 3D
+# <img src="https://github.com/user-attachments/assets/2b7e72c2-e18c-41b1-adc5-7cded8253dea" alt="ícone de simulação" width="28"> Simulação Virtual - TinkerCad 3D
 De forma adicional, cabe tornar claro que a correta utilização do LCD e por consequência do Módulo I2C não prescinde do emprego de uma biblioteca, sendo uma das mais populares a <LiquidCrystal_I2C.h>. Por último, tais bibliotecas tornam possível a promoção das funções de C + + relacionadas às ações desejadas.
 
 O projeto a ser executado de forma holística tem como égide metodológica a abordagem descritiva-explicativa do processo por meio da indicação dos itens eletroeletrônicos e mecânico (com ênfase particular na mola) a serem manipulados em consonância com a linguagem da programação apropriada para a utilização do Arduino.
@@ -175,7 +175,7 @@ c) estabelecer e delimitar os parâmetros de funcionamento do aparato;
 
 d) analisar o desempenho do mecanismo, de tal forma a realizar a retificação de possíveis falhas de montagem ou de ordenamento da codificação.
 
-# Medidas e Testes
+# <img src="https://github.com/user-attachments/assets/e0ce9adf-c75b-4670-8adf-0853b96c4a5b" alt="ícone de teste" width="28"> Medidas e Testes
 Com a mola comprada, se viu a necessidade de calcular suas medidas, principalmente sua elongação e a sua constante elástica presentes, com o intuito de tal componente ser compatível com o suporte.
 
 Para isso, foi elaborado um mecanismo que com o auxílio de uma régua centimetrada facilitou a medida da constante elástica com massas inferiores à 1 Kg, conforme imagem (Figura 10) a seguir:
@@ -230,7 +230,7 @@ Ainda utilizando o LAB fit, segue o gráfico (Figura 12) Peso x Deformação:
 
 <br>
 
-# Organização Eletroeletrônica
+# <img src="https://github.com/user-attachments/assets/c3adea14-bdd0-4b1d-a4c3-add774a94be1" alt="ícone de organização eletrônica" width="28"> Organização Eletroeletrônica
 Como resolução final, o suporte da balança bem como o prato para aferição foram confeccionados de acrílico. O sensor ultrassônico foi disposto na porção central da balança para a melhor obtenção dos dados da distância.
 
 Para mais, optou-se pela utilização do LCD com módulo I2C integrado, com o fito de poupar não somente espaço no interior da balança mas também evitar o enroscamento excessivo dos jumpers.
@@ -255,7 +255,7 @@ Posto essa rápida explanação, seguem as imagens do circuito no Tinkercad (Fig
 
 <br>
 
-# Prototipação
+# <img src="https://github.com/user-attachments/assets/fd89ebde-0412-4365-a038-b7f3a02e1361" alt="ícone de balança digital" width="32"> Prototipação
 Primeiramente, vale destacar que as entradas VCC de ambos os componentes conectados à placa arduino foram ligados às portas de voltagem de saída positiva, sendo que o sensor HC-SR04 foi atrelado à porta de 3.3V e o LCD foi atado a porta de 5V para funcionar de forma adequada devido à necessidade de uma maior voltagem. Ademais, ambos os polos negativos foram inseridos ao GND da placa.
 
 A partir disso, o trigger do sensor foi conectado ao pino digital 2 e o eco ao pino digital 3. Já no que se refere ao LCD, sabendo-se que o modelo da placa arduino é o UNO R3, a porta Serial Data (SDA) que é responsável pela transmissão de dados deve ser ligada ao pino analógico A4 e a porta Serial Clock (SCL) que tem por função sincronizar toda a informação pelo módulo I2C, deve ser ligada ao pino A5.
